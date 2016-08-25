@@ -24,10 +24,10 @@ namespace CustomListPractice
             //gen.RemoveArray2(213);
             //gen.Print();
             //Console.ReadLine();
-            //Console.WriteLine("List to String");           
-            //string toString = gen.ListToString();
-            //Console.WriteLine(toString);
-            //Console.ReadLine();
+            Console.WriteLine("List to String");
+            string toString = gen.ListToString().ToString();
+            Console.WriteLine(toString);
+            Console.ReadLine();
             //Console.WriteLine("simple operator overload");
             //OverloadArray obj = new OverloadArray("hi", 55.5);
             //OverloadArray obj2 = new OverloadArray(" there", 45);

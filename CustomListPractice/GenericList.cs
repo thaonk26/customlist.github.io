@@ -78,9 +78,15 @@ namespace CustomListPractice
         }
         public string ListToString()
         {
-            string myString = string.Join(",", superArray);
-            stringOfLists = myString;
-            return stringOfLists;
+            string temporary = "";
+            for (int i = 0; i < superArray.Length; i++)
+            {
+                temporary = temporary + " " + superArray[i];
+            }
+            return temporary;
+            //string myString = string.Join(",", superArray);
+
+            //return myString;
         }
         public static GenericList<T> operator +(GenericList<T> itemOne, GenericList<T> itemTwo)
         {
@@ -137,8 +143,8 @@ namespace CustomListPractice
         }
         public bool ShowHappy(int number)
         {
-            var visited = new List<int>();
-            var n = number;
+            List<int> visited = new List<int>();
+            int n = number;
             while (!visited.Contains(n))
             {
                 visited.Add(n);
