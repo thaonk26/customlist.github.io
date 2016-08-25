@@ -1,0 +1,6 @@
+C:\Users\Nathaniel\Desktop\DCC Lectures\C# projects\Week 2\CustomListPractice\CustomListPractice\bin\Debug\CustomListPractice.exe.config
+C:\Users\Nathaniel\Desktop\DCC Lectures\C# projects\Week 2\CustomListPractice\CustomListPractice\bin\Debug\CustomListPractice.exe
+C:\Users\Nathaniel\Desktop\DCC Lectures\C# projects\Week 2\CustomListPractice\CustomListPractice\bin\Debug\CustomListPractice.pdb
+C:\Users\Nathaniel\Desktop\DCC Lectures\C# projects\Week 2\CustomListPractice\CustomListPractice\obj\Debug\CustomListPractice.csprojResolveAssemblyReference.cache
+C:\Users\Nathaniel\Desktop\DCC Lectures\C# projects\Week 2\CustomListPractice\CustomListPractice\obj\Debug\CustomListPractice.exe
+C:\Users\Nathaniel\Desktop\DCC Lectures\C# projects\Week 2\CustomListPractice\CustomListPractice\obj\Debug\CustomListPractice.pdb
