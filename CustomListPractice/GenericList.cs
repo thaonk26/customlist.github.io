@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CustomListPractice
 {
-    public class GenericList<T> : IEnumerable<T>
+    public class GenericList<T> : IEnumerable<T>, IComparable<T>
     {
         T[] superArray;
         public string stringOfLists;
@@ -84,9 +84,6 @@ namespace CustomListPractice
                 temporary = temporary + " " + superArray[i];
             }
             return temporary;
-            //string myString = string.Join(",", superArray);
-
-            //return myString;
         }
         public static GenericList<T> operator +(GenericList<T> itemOne, GenericList<T> itemTwo)
         {
@@ -122,7 +119,7 @@ namespace CustomListPractice
             {
                 for (int z = 0; z < superArray.Length; z++)
                 {
-                    if(superArray[i].GetHashCode() < superArray[z].GetHashCode())
+                    if (Comparer.Default.Compare(superArray[i], superArray[z]) > 0)
                     {
                         temporary = superArray[i];
                         superArray[i] = superArray[z];
@@ -188,6 +185,11 @@ namespace CustomListPractice
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public int CompareTo(T other)
+        {
+            throw new NotImplementedException();
         }
     }
 }
